@@ -1,0 +1,57 @@
+#home #introduction {
+  color: #e8e8e8;
+}
+
+.typewriter-container {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(0, 0, 0);
+    animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.1em;
+  background-color: rgb(253, 253, 253);
+  margin-left: 0.1em;
+}
+
+@media (min-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  .typewriter-container {
+    font-size: 5rem;
+
+  }
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* Typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #fff9f9;
+  }
+}
