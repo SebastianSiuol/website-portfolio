@@ -2,21 +2,25 @@ import { useState, useEffect } from "react";
 import "./Home.css";
 
 function Home() {
-    const texts = ["Welcome to my Portfolio!", "Enjoy your stay!", "Hello World!"];
+    const texts = ["Welcome!", "Enjoy your stay!", "Hello World!"];
     const [text, setText] = useState("");
     const [index, setIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const [speed, setSpeed] = useState(20);
+    const [speed, setSpeed] = useState(150);
 
     useEffect(() => {
         const current = texts[index % texts.length];
+
+        console.log(index);
 
         const timeout = setTimeout(() => {
             if (!isDeleting) {
                 setText(current.substring(0, text.length + 1));
                 if (text.length + 1 === current.length) {
-                    setIsDeleting(true);
-                    setSpeed(50);
+                    setTimeout(() => {
+                        setIsDeleting(true);
+                        setSpeed(50);
+                    }, 1000);
                 }
             } else {
                 setText(current.substring(0, text.length - 1));
@@ -31,12 +35,14 @@ function Home() {
     }, [text, isDeleting, index]);
 
     return (
-        <section id="home" className="section">
-            <div className="typewriter-container">
-                <span className="typewriter-text">{text}</span>
-                <span className="cursor" />
+        <section id="home" className="section-home">
+            <div className="section-content-home">
+                <div className="typewriter-container">
+                    <span className="typewriter-text">{text}</span>
+                    <span className="cursor" />
+                </div>
+                <h1 className="h1">I'm Sebastian Louis Torio</h1>
             </div>
-            <h1 className="h1">I'm Sebastian Louis Torio</h1>
         </section>
     );
 }
