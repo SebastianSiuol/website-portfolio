@@ -22,22 +22,21 @@ function ProjectCard({
     return (
         <>
             <Card className="project-card ">
-                <CardContent className="p-0">
+                <CardContent className="project-card-media">
                     <img
                         src={image}
                         alt={projectName}
-                        className="w-full object-fill"
                     />
                 </CardContent>
-                <CardHeader className="flex flex-col flex-1 px-4 pt-4 text-[#e8e8e8]">
-                    <h4 className="project-title text-left text-[1.1rem] font-semibold leading-tight mb-2">
+                <CardHeader className="flex flex-col text-[#e8e8e8]">
+                    <h4 className="project-title font-semibold">
                         {projectName}
                     </h4>
-                    <p className="project-desc text-left text-[0.85rem] text-[#ffffffd1]">
+                    <p className="project-desc">
                         {description}
                     </p>
                 </CardHeader>
-                <CardFooter className="px-4 pb-4 mt-auto flex justify-end">
+                <CardFooter className="px-4 pb-4 justify-end">
                     <Link
                         to={`/project/${id}`}
                         className="view-project border border-[#333] rounded-lg text-[#e8e8e8] text-sm px-3 py-2 hover:bg-[#222] transition-all duration-200"
