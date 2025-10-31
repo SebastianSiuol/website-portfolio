@@ -48,7 +48,7 @@ function About() {
         <RevealOnScroll>
             <section id="about" className="section">
                 <div className="section-content">
-                    <h1 className="header">About Me</h1>
+                    <h1 className="header font-bold">About Me</h1>
                     <div className="card">
                         <p>
                             I am a full-stack developer with an experience in developing web applications and innovative solutions.
