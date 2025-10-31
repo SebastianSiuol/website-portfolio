@@ -11,14 +11,14 @@
 
 .tech-categ-card:hover {
   border: #333 2px solid;
-  transform: scale(1.02);
+  transform: scale(1.01);
   z-index:2;
 
   transition: transform 200ms ease;
 }
 
 .tech-categ-card-header {
-  text-align: left;
+  text-align: start;
   font-size: 1.5rem;
   font-weight:bold;
   margin: 0.2rem 0.5rem 1rem
@@ -27,7 +27,7 @@
 .tech-items {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: start; */
+  justify-content: left;
   row-gap: 0.1rem;
   column-gap: 0.1rem;
 }

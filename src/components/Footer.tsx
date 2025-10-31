@@ -1,0 +1,34 @@
+
+import './Footer.css';
+
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
+
+function Footer () {
+  return (
+        <footer id="footer">
+            <div id="footer-content">
+                <ul id="social-links">
+                    <li>
+                        <a href="https://github.com/SebastianSiuol"><FaGithub /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/sebastian-louis-torio"><FaLinkedin /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/sebastianoriot30/"><FaFacebook /></a>
+                    </li>
+                    <li>
+                        <a href="mailto:slm.torio30@gmail.com"><SiGmail /></a>
+                    </li>
+                </ul>
+                <div id="rights-reserved">
+                  <p>@2025 Sebastian Louis M. Torio. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    );
+}
+
+export default Footer;

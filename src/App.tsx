@@ -1,5 +1,6 @@
 // Imports
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 // Section Imports
 import Home from "./sections/Home";
@@ -18,6 +19,7 @@ function App() {
             <About />
             <Projects />
             <Contact />
+            <Footer />
         </>
     );
 }
