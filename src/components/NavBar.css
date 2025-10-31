@@ -1,23 +1,26 @@
-.navbar-container {
+.navbar {
   position: fixed;
   width: 100vw;
-  /* border-bottom: #333 1px solid; */
-  padding: 1rem 10rem;
-  z-index: 1000;
+  padding: 1rem 1rem;
+  z-index: 950;
 
   backdrop-filter: blur(10px);
 }
 
-.navbar {
+.navbar-content-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.navbar-content-links {
+  display: none;
+}
+
 
 .logo {
   color: rgb(20, 142, 255);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -42,9 +45,111 @@
   color: #ffffff;
 }
 
-@media (max-width: 600px) {
+.burger-menu {
+  font-size: 2.5rem;
+  border: #333 2px solid;
+  border-radius: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+
+  transition: all 200ms ease;
+}
+
+.burger-menu:hover {
+  transform: scale(1.1);
+
+}
+
+.burger-menu:active {
+  transform: scale(0.8);
+}
+
+.menu-nav-links {
+  backdrop-filter: blur(10px);
+
+
+  position: flex;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border-bottom: #666 1px solid;
+
+  z-index: 1000;
+
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    max-height 0.4s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease;
+
+}
+.menu-nav-links.open {
+  max-height: 300px; /* Adjust to your link count */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Each link in mobile menu === */
+.menu-nav-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.menu-nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.menu-nav-links a:hover {
+  color: #fff;
+}
+
+/* === Keep current burger and logo behavior === */
+.burger-menu {
+  font-size: 2.5rem;
+  border: #333 2px solid;
+  border-radius: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+/* Medium devices (≥768px) — tablets */
+@media (min-width: 768px) {
   .nav-links {
     flex-direction: column;
     align-items: center;
   }
+
+  .navbar-container {
+    position: fixed;
+    width: 100vw;
+    padding: 1rem 10rem;
+    z-index: 1000;
+
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar-content-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.logo {
+  color: #148eff;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
 }

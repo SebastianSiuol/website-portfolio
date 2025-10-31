@@ -4,7 +4,7 @@
   border-top: #666 1px solid;
 
   width: 100vw;
-  padding: 1rem 10rem;
+  padding: 1rem 3rem;
 
   z-index: 1000;
   backdrop-filter: blur(10px);
@@ -29,14 +29,28 @@
   display:flex;
   justify-content: center;
 
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 
 
 
-@media (max-width: 600px) {
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
+@media (min-width: 768px) {
+  #footer {
+  background-color: #222;
+
+  border-top: #666 1px solid;
+
+  width: 100vw;
+  padding: 1rem 10rem;
+
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+#rights-reserved {
+  display:flex;
+  justify-content: center;
+
+  font-size: 0.8rem;
+}
 }
