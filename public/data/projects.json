@@ -1,0 +1,36 @@
+[
+  {
+    "id": "a1329a1b-fed1-4db2-bd3b-864ba2378091",
+    "projectName": "Cavaliers Village Homeowner Association System",
+    "description": "The Cavaliers Village Homeowner System is a web-based community management platform designed to enhance communication, transparency, and operational efficiency within residential villages. It provides administrators, homeowners, and residents with an all-in-one system to manage housing information, community activities, and resident engagement.",
+    "image": "/cvhai/01.png",
+    "images": [
+      "/cvhai/01.png",
+      "/cvhai/02.png",
+      "/cvhai/03.png",
+      "/cvhai/04.png",
+      "/cvhai/05.png",
+      "/cvhai/06.png",
+      "/cvhai/07.png",
+      "/cvhai/08.png"
+    ]
+  },
+  {
+    "id": "39b7e47c-87d7-49dd-b585-2272979af6a4",
+    "projectName": "BHNHS Human Resource System",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore. Blanditiis adipisci, est sequi doloribus quia distinctio? Asperiores cum exercitationem nisi quis, quam nihil perferendis, incidunt architecto eaque, omnis quod!",
+    "image": "/cvhai/01.png",
+    "images": [
+      "/cvhai/01.png"
+    ]
+  },
+  {
+    "id": "10a4cd39-ed3c-452d-a463-f8af7811b59a",
+    "projectName": "TherYgros",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore. Blanditiis adipisci, est sequi doloribus quia distinctio? Asperiores cum exercitationem nisi quis, quam nihil perferendis, incidunt architecto eaque, omnis quod!",
+    "image": "/cvhai/01.png",
+    "images": [
+      "/cvhai/01.png"
+    ]
+  }
+]

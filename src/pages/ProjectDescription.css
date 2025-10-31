@@ -1,0 +1,73 @@
+#project-description {
+  min-height: 100vh;
+  max-width: 100vw;
+
+}
+
+#project-content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: left;
+
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem auto;
+}
+
+#project-header {
+  font-size: 1rem;
+}
+
+.carousel-card {
+  background-color: #111;
+  border: #333 1px solid;
+  border-radius: 1rem;
+  padding: 0 0;
+  width: 100%;
+  overflow: hidden;
+  z-index:1;
+
+  transition: transform 200ms ease;
+}
+
+.carousel-card:hover {
+  border: #333 2px solid;
+  z-index:2;
+
+  transition: transform 200ms ease;
+}
+
+.carousel-buttons {
+  background-color: #333;
+  border: #333 1px solid;
+
+  transition: transform 200ms ease;
+
+}
+
+.carousel-buttons:hover {
+  color: white;
+  background-color: #666;
+  border: #666 2px solid;
+  transform: scale(1.2);
+
+  transition: transform 200ms ease;
+}
+
+.carousel-buttons:active {
+  color: white;
+  background-color: #666;
+  border: #666 2px solid;
+  transform: scale(0.8);
+
+  transition: transform 200ms ease;
+}
+
+/* Medium devices (≥768px) — tablets */
+@media (min-width: 768px) {
+
+#project-header {
+  font-size: 2rem;
+}
+}

@@ -5,7 +5,7 @@ function Contact() {
     return (
         <RevealOnScroll>
             <section id="contact" className="section">
-                <h1 className="section-header">Contact</h1>
+                <h1 className="section-header font-bold">Contact</h1>
                 <div id="card">
 
                 </div>
