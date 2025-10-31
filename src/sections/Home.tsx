@@ -43,6 +43,7 @@ function Home() {
                 </div>
                 <h1 className="h1">I'm Sebastian Louis Torio</h1>
             </div>
+
         </section>
     );
 }

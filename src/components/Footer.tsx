@@ -1,8 +1,8 @@
 
 import './Footer.css';
 
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import { FaGithub, FaLinkedin, FaFacebook, FaReact } from "react-icons/fa";
+import { SiGmail, SiTypescript } from "react-icons/si";
 
 
 function Footer () {
@@ -23,8 +23,9 @@ function Footer () {
                         <a href="mailto:slm.torio30@gmail.com"><SiGmail /></a>
                     </li>
                 </ul>
+                <div></div>
                 <div id="rights-reserved">
-                  <p>@2025 Sebastian Louis M. Torio. All Rights Reserved.</p>
+                  <p className="flex">@2025 Sebastian Louis M. Torio. Powered by <FaReact /> <SiTypescript /></p>
                 </div>
             </div>
         </footer>

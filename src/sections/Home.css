@@ -1,5 +1,5 @@
-#home #introduction {
-  color: #e8e8e8;
+#subtext {
+  font-size: clamp(0.4rem, 2vw, 0.8rem);
 }
 
 .section-home {
@@ -44,17 +44,6 @@
   .section-home {
     justify-content: center;
     padding: 0 0;
-  }
-}
-
-/* Typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
   }
 }
 
