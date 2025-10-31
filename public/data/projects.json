@@ -94,10 +94,37 @@
 	{
 		"id": "10a4cd39-ed3c-452d-a463-f8af7811b59a",
 		"projectName": "TherYgros",
-		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore. Blanditiis adipisci, est sequi doloribus quia distinctio? Asperiores cum exercitationem nisi quis, quam nihil perferendis, incidunt architecto eaque, omnis quod!",
-		"image": "/cvhai/01.png",
+		"description": "TherYgros is a Flutter-based IoT application integrated with an ESP-32 microcontroller that measures humidity and precipitation, stores real-time sensor data in Firebase, implements account-based authentication, and provisions WiFi credentials for persistent device connectivity.",
+		"image": "/thery/01.png",
 		"images": [
-			"/cvhai/01.png"
-		]
+      "/thery/01.png",
+			"/thery/02.png",
+			"/thery/03.png",
+			"/thery/04.png",
+			"/thery/05.png",
+			"/thery/06.png"
+		],
+    "techUsed": [
+
+      {
+        "name": "Flutter"
+      },
+			{
+        "name": "Dart"
+			},
+      {
+        "name": "Firebase"
+      },
+			{
+        "name": "C++"
+			},
+      {
+        "name": "Arduino"
+      },
+      {
+        "name": "ESP-32"
+      }
+    ],
+    "experience": "A simple side project I worked on for my Emerging Technologies course. I integrated an ESP-32 chip and made it communicate with the app via UDP to allow network provisioning and send WiFi credentials to the ESP-32."
 	}
 ]

@@ -26,7 +26,7 @@ function ProjectCard({
                     <img
                         src={image}
                         alt={projectName}
-                        className="w-full h-48 object-cover"
+                        className="w-full h-48 object-fill"
                     />
                 </CardContent>
                 <CardHeader className="flex flex-col flex-1 px-4 pt-4 text-[#e8e8e8]">
