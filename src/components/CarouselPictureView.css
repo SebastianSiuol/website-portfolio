@@ -1,0 +1,14 @@
+.carousel-dialog-content {
+  background-color: #111;
+  min-width: 90vw;
+
+}
+
+.carousel-dialog-header {
+}
+
+
+.carousel-media-container {
+  border: #111 4px solid;
+  border-radius: 2rem;
+}

@@ -46,7 +46,7 @@
 	},
 	{
 		"id": "39b7e47c-87d7-49dd-b585-2272979af6a4",
-		"projectName": "BHNHS Human Resource",
+		"projectName": "Batasan Hills National Highschool Human Resource Management System",
 		"description": "Batasan Hills National Highschool Human Resource System is web-based system designed for managing school personnel, featuring Employee Management, Personal Data Sheet printing for faculty, Leave Management, Attendance Management, and Role-Based Authorization and Authentication using JWT for secure integration with related systems such as the Student Information System (SIS) and Logistics System.",
 		"image": "/bhnhs/01.png",
 		"images": [

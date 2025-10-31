@@ -1,9 +1,13 @@
+// Library Imports
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import type { Project } from "@/utils/types";
 import Autoplay from "embla-carousel-autoplay";
 import { useLocation } from "react-router-dom";
 
+// Component Imports
+import TechStackCard from "@/components/TechStackCard";
+import NoProject from "@/components/NoProject";
 import { Card, CardContent } from "@/components/shadcn/card";
 import {
     Carousel,
@@ -14,18 +18,14 @@ import {
 } from "@/components/shadcn/carousel";
 
 import "./ProjectDescription.css";
-import NoProject from "@/components/NoProject";
-import TechStackCard from "@/components/TechStackCard";
-
-
-
+import CarouselPictureView from "@/components/CarouselPictureView";
 
 function ProjectDescription() {
     const [project, setProject] = useState<Project | null>();
-    const [notFound, setNotFound] = useState(false);
+    const [notFound, setNotFound] = useState<boolean>(false);
+
     const params = useParams<{ projectId: string }>();
     const { pathname } = useLocation();
-
 
     useEffect(() => {
         async function fetchProjects() {
@@ -43,7 +43,6 @@ function ProjectDescription() {
 
                 setProject(matchedProject || null);
 
-
                 if (matchedProject) {
                     setProject(matchedProject);
                     setNotFound(false);
@@ -60,8 +59,7 @@ function ProjectDescription() {
     }, [params.projectId]);
 
     useEffect(() => {
-                window.scrollTo(0, 0);
-
+        window.scrollTo(0, 0);
     }, [pathname]);
 
     return (
@@ -92,9 +90,15 @@ function ProjectDescription() {
                                         <CarouselItem key={index}>
                                             <div className="p-1">
                                                 <Card className="carousel-card">
-                                                    <CardContent className="p-0">
-                                                        <img src={`${img}`} />
-                                                    </CardContent>
+                                                    <CarouselPictureView
+                                                        imgSrc={img}
+                                                    >
+                                                        <CardContent className="p-0">
+                                                            <img
+                                                                src={`${img}`}
+                                                            />
+                                                        </CardContent>
+                                                    </CarouselPictureView>
                                                 </Card>
                                             </div>
                                         </CarouselItem>
