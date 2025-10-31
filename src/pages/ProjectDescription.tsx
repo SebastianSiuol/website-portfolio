@@ -73,9 +73,9 @@ function ProjectDescription() {
                             <div className="my-5">
                                 <Link
                                     to="/#projects"
-                                    className="view-project border border-[#333] rounded-lg text-[#e8e8e8] text-sm  hover:bg-[#222] transition-all duration-200"
+                                    className="view-project border border-[#333] rounded-lg text-[#e8e8e8] text-2xl  hover:bg-[#222] transition-all duration-200"
                                 >
-                                    {`<- Return`}
+                                    &larr;{` Return`}
                                 </Link>
                             </div>
                             <Carousel
@@ -104,8 +104,8 @@ function ProjectDescription() {
                                         </CarouselItem>
                                     ))}
                                 </CarouselContent>
-                                <CarouselPrevious className="carousel-buttons" />
-                                <CarouselNext className="carousel-buttons" />
+                                <CarouselPrevious className="carousel-buttons size-11" />
+                                <CarouselNext className="carousel-buttons size-11" />
                             </Carousel>
                             <h1 id="project-header" className="font-bold">
                                 {project?.projectName}

@@ -1,9 +1,11 @@
 #projects-grid {
   display:flex;
   flex-wrap:wrap;
+
   justify-content:flex-start;
   text-align:left;
-  gap:clamp(12px,1vw,15px);
+
+  gap: clamp(12px,1vw,15px);
 
   width:100%;
   max-width:1100px;
