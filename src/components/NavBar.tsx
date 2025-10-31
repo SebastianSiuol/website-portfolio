@@ -16,6 +16,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-content-links">
                     <a href="#home" className="logo">
+                        <img src={'/favicon.svg'} className="logo-icon"/>
                         Torio's Portfolio
                     </a>
                     <ul className="nav-links">
@@ -36,6 +37,8 @@ function Navbar() {
 
                 <div className="navbar-content-menu">
                     <a href="#home" className="logo">
+                        <img src={'/favicon.svg'} className="logo-icon"/>
+
                         Torio's Portfolio
                     </a>
                     <div>

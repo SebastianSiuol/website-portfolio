@@ -14,18 +14,26 @@
 }
 
 .navbar-content-links {
+
   display: none;
+
 }
 
 
 .logo {
+  display:flex;
+
   color: rgb(20, 142, 255);
   font-size: 1.5rem;
   font-weight: bolder;
   text-decoration: none;
 }
 
-
+.logo-icon {
+  display:inline;
+  height:clamp(24px, 8vw, 32px);
+  margin: 0 0.5rem;
+}
 
 .nav-links a:hover {
   color: #ffffff;
