@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react';
 
-interface RevealOnScrollProps {
+type RevealOnScrollProps = {
   children: React.ReactNode
 }
 
 function RevealOnScroll ({ children }: RevealOnScrollProps){
+
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {

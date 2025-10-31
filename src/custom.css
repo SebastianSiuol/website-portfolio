@@ -42,13 +42,14 @@ html, body {
   justify-content: center;
   min-height: 100vh;
   max-height: none;
+  max-width: 100%;
+
   height: auto;
   padding: 20% 0;
 }
 
 .section-content {
-  max-width: 90vw;
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
 

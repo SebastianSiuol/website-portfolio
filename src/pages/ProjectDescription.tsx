@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
-import type { Project } from "@/util/types";
+import type { Project } from "@/utils/types";
 import Autoplay from "embla-carousel-autoplay";
 import { useLocation } from "react-router-dom";
 

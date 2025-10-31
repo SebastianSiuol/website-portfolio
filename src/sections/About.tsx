@@ -1,4 +1,4 @@
-import RevealOnScroll from "../util/RevealOnScroll";
+import RevealOnScroll from "../utils/RevealOnScroll";
 
 // Frontend Icons
 import { FaReact, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";

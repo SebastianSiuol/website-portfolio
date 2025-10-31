@@ -21,12 +21,12 @@ function ProjectCard({
 }: ProjectCardProps) {
     return (
         <>
-            <Card className="project-card bg-color-[#111] max-w-md pt-0">
+            <Card className="project-card ">
                 <CardContent className="p-0">
                     <img
                         src={image}
                         alt={projectName}
-                        className="w-full h-48 object-fill"
+                        className="w-full object-fill"
                     />
                 </CardContent>
                 <CardHeader className="flex flex-col flex-1 px-4 pt-4 text-[#e8e8e8]">

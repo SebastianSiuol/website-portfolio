@@ -3,7 +3,7 @@ import { useLocation } from "react-router";
 
 import ProjectCard from "@/components/ProjectCard";
 
-import RevealOnScroll from "../util/RevealOnScroll";
+import RevealOnScroll from "../utils/RevealOnScroll";
 import "./Projects.css";
 
 type Project = {

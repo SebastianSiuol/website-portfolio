@@ -1,4 +1,4 @@
-import RevealOnScroll from "../util/RevealOnScroll";
+import RevealOnScroll from "../utils/RevealOnScroll";
 import "./Contact.css";
 
 function Contact() {
