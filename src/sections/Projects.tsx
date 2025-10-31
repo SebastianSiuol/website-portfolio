@@ -1,6 +1,8 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 
 import ProjectCard from "@/components/ProjectCard";
+
 import RevealOnScroll from "../util/RevealOnScroll";
 import "./Projects.css";
 
@@ -12,14 +14,24 @@ type Project = {
 };
 
 function Projects() {
-
     const [projects, setProjects] = useState<Project[]>([]);
+    const location = useLocation();
 
     useEffect(() => {
         fetch("/data/projects.json")
             .then((response) => response.json())
-            .then((json) => setProjects(json))
+            .then((json) => setProjects(json));
     }, []);
+
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace("#", "");
+            const el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
+    }, [location.hash]);
 
     return (
         <RevealOnScroll>

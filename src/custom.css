@@ -101,6 +101,9 @@ html, body {
 
 /* Medium devices (≥768px) — tablets */
 @media (min-width: 768px) {
+.section {
+  padding: 10% 0;
+}
 
 }
 

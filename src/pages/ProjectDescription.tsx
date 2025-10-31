@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import type { Project } from "@/util/types";
 import Autoplay from "embla-carousel-autoplay";
+import { useLocation } from "react-router-dom";
 
 import { Card, CardContent } from "@/components/shadcn/card";
 import {
@@ -16,16 +17,15 @@ import "./ProjectDescription.css";
 import NoProject from "@/components/NoProject";
 import TechStackCard from "@/components/TechStackCard";
 
+
+
+
 function ProjectDescription() {
     const [project, setProject] = useState<Project | null>();
     const [notFound, setNotFound] = useState(false);
-
-    const navigate = useNavigate();
-    function handleBack() {
-        navigate(-1);
-    }
-
     const params = useParams<{ projectId: string }>();
+    const { pathname } = useLocation();
+
 
     useEffect(() => {
         async function fetchProjects() {
@@ -43,6 +43,7 @@ function ProjectDescription() {
 
                 setProject(matchedProject || null);
 
+
                 if (matchedProject) {
                     setProject(matchedProject);
                     setNotFound(false);
@@ -58,6 +59,11 @@ function ProjectDescription() {
         fetchProjects();
     }, [params.projectId]);
 
+    useEffect(() => {
+                window.scrollTo(0, 0);
+
+    }, [pathname]);
+
     return (
         <>
             <section id="project-description">
@@ -66,13 +72,13 @@ function ProjectDescription() {
                         <NoProject />
                     ) : project ? (
                         <>
-                            <div>
-                                <button
-                                    onClick={handleBack}
+                            <div className="my-5">
+                                <Link
+                                    to="/#projects"
                                     className="view-project border border-[#333] rounded-lg text-[#e8e8e8] text-sm  hover:bg-[#222] transition-all duration-200"
                                 >
-                                    Return back
-                                </button>
+                                    {`<- Return`}
+                                </Link>
                             </div>
                             <Carousel
                                 plugins={[
@@ -97,7 +103,7 @@ function ProjectDescription() {
                                 <CarouselPrevious className="carousel-buttons" />
                                 <CarouselNext className="carousel-buttons" />
                             </Carousel>
-                            <h1 id="project-header" className=" font-bold">
+                            <h1 id="project-header" className="font-bold">
                                 {project?.projectName}
                             </h1>
 

@@ -47,7 +47,6 @@ function Navbar() {
                 </div>
 
                 <ul className={`menu-nav-links ${menuOpen ? "open" : ""}`}>
-                {/* <ul className={`menu-nav-links open`}> */}
                     <li>
                         <a href="#home" onClick={menuBurger}>
                             Home
