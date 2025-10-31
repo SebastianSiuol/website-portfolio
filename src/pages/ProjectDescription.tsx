@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import type { Project } from "@/util/types";
-import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay";
 
-
-import { Card, CardContent } from "@/components/shadcn/card"
+import { Card, CardContent } from "@/components/shadcn/card";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/shadcn/carousel"
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/shadcn/carousel";
 
-import './ProjectDescription.css';
+import "./ProjectDescription.css";
 import NoProject from "@/components/NoProject";
+import TechStackCard from "@/components/TechStackCard";
 
 function ProjectDescription() {
     const [project, setProject] = useState<Project | null>();
@@ -57,7 +57,6 @@ function ProjectDescription() {
 
         fetchProjects();
     }, [params.projectId]);
-
 
     return (
         <>
@@ -102,8 +101,33 @@ function ProjectDescription() {
                                 {project?.projectName}
                             </h1>
 
-                            <div className="mt-4">
-                                <p>{project.description}</p>
+                            <div id="project-description-grid">
+                                <div className="flex flex-col space-y-2">
+                                    <div className="space-y-1">
+                                        <h4 id="project-description-header">
+                                            What the project all about:
+                                        </h4>
+                                        <p id="project-description-text">
+                                            {project.description}
+                                        </p>
+                                    </div>
+
+                                    <div className="space-y-1">
+                                        <h4 id="project-description-header">
+                                            My experience:
+                                        </h4>
+                                        <p id="project-description-text">
+                                            {project.experience}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <TechStackCard
+                                        cardName={"Technology Used"}
+                                        techStack={project.techUsed}
+                                        techUsed={true}
+                                    />
+                                </div>
                             </div>
                         </>
                     ) : (

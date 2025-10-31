@@ -60,11 +60,11 @@ function About() {
                     <h1 className="sub-header">Technology Stack:</h1>
 
                     <div className="tech-stack">
-                        <TechStackCard cardName={"Frontend"} techStack={frontendTechs} />
+                        <TechStackCard cardName={"Frontend"} techStack={frontendTechs} techUsed={false}/>
 
-                        <TechStackCard cardName={"Backend"} techStack={backendTechs} />
+                        <TechStackCard cardName={"Backend"} techStack={backendTechs} techUsed={false} />
 
-                        <TechStackCard cardName={"Other tools"} techStack={otherTools} />
+                        <TechStackCard cardName={"Other tools"} techStack={otherTools} techUsed={false} />
 
                     </div>
                 </div>

@@ -14,17 +14,11 @@
   }
 }
 
-.tech-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  row-gap: 0.1rem;
-  column-gap: 0.1rem;
-}
 
 .tech-icon {
   display: inline;
-  margin-right: 1px;
+  margin-right: 6px;
+  padding: 0 0;
 }
 
 
