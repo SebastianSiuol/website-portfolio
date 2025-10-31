@@ -1,22 +1,71 @@
 [
-  {
-    "id": "a1329a1b-fed1-4db2-bd3b-864ba2378091",
-    "projectName": "Cavaliers Village Homeowner Association System",
-    "description": "A web-based community management platform designed to enhance transparency, and operational efficiency within residential villages. It provides administrators, homeowners, and residents with an all-in-one system to manage housing information, community activities, and resident engagement.",
-    "image": "/cvhai/01.png",
-    "images": [
-      "/cvhai/01.png",
-      "/cvhai/02.png",
-      "/cvhai/03.png",
-      "/cvhai/04.png",
-      "/cvhai/05.png",
-      "/cvhai/06.png",
-      "/cvhai/07.png",
-      "/cvhai/08.png",
-      "/cvhai/09.png",
-      "/cvhai/10.png"
-    ],
+	{
+		"id": "a1329a1b-fed1-4db2-bd3b-864ba2378091",
+		"projectName": "Cavaliers Village Homeowner Association System",
+		"description": "A web-based community management platform designed to enhance transparency, and operational efficiency within residential villages. It provides administrators, homeowners, and residents with an all-in-one system to manage housing information, community activities, and resident engagement.",
+		"image": "/cvhai/01.png",
+		"images": [
+			"/cvhai/01.png",
+			"/cvhai/02.png",
+			"/cvhai/03.png",
+			"/cvhai/04.png",
+			"/cvhai/05.png",
+			"/cvhai/06.png",
+			"/cvhai/07.png",
+			"/cvhai/08.png",
+			"/cvhai/09.png",
+			"/cvhai/10.png"
+		],
+		"techUsed": [
+			{
+				"name": "HTML"
+			},
+			{
+				"name": "CSS"
+			},
+      {
+				"name": "Bootstrap"
+			},
+			{
+				"name": "Javascript"
+			},
+			{
+				"name": "JQuery"
+			},
+			{
+				"name": "Django"
+			},
+			{
+				"name": "Django REST Framework"
+			},
+			{
+				"name": "PostgreSQL"
+			}
+		],
+		"experience": "I worked as a backend developer, with some frontend involvement to integrate the required data via REST APIs. I really enjoyed developing this website with my team, collaborating closely with the frontend developers, and integrating the frontend and backend using REST APIs and simple AJAX syntax."
+	},
+	{
+		"id": "39b7e47c-87d7-49dd-b585-2272979af6a4",
+		"projectName": "BHNHS Human Resource System",
+		"description": "Batasan Hills National Highschool Human Resource System is web-based system designed for managing school personnel, featuring Employee Management, Personal Data Sheet printing for faculty, Leave Management, Attendance Management, and Role-Based Authorization and Authentication using JWT for secure integration with related systems such as the Student Information System (SIS) and Logistics System.",
+		"image": "/cvhai/01.png",
+		"images": [
+			"/cvhai/01.png"
+		],
     "techUsed": [
+
+      {
+        "name": "ReactJS"
+      },
+			{
+        "name": "Javascript"
+			},
+      {
+        "name": "InertiaJS"
+      },
+			{
+        "name": "Laravel"
+			},
       {
         "name": "HTML"
       },
@@ -24,39 +73,21 @@
         "name": "CSS"
       },
       {
-        "name": "Javascript"
-      },
-      {
-        "name": "JQuery"
-      },
-      {
-        "name": "Django"
-      },
-      {
-        "name": "Django REST Framework"
-      },
-      {
-        "name": "PostgreSQL"
-      }
-    ],
-    "experience": "I worked as a backend developer, with some frontend involvement to integrate the required data via REST APIs. I really enjoyed developing this website with my team, collaborating closely with the frontend developers, and integrating the frontend and backend using REST APIs and simple AJAX syntax."
-  },
-  {
-    "id": "39b7e47c-87d7-49dd-b585-2272979af6a4",
-    "projectName": "BHNHS Human Resource System",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore. Blanditiis adipisci, est sequi doloribus quia distinctio? Asperiores cum exercitationem nisi quis, quam nihil perferendis, incidunt architecto eaque, omnis quod!",
-    "image": "/cvhai/01.png",
-    "images": [
-      "/cvhai/01.png"
-    ]
-  },
-  {
-    "id": "10a4cd39-ed3c-452d-a463-f8af7811b59a",
-    "projectName": "TherYgros",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore. Blanditiis adipisci, est sequi doloribus quia distinctio? Asperiores cum exercitationem nisi quis, quam nihil perferendis, incidunt architecto eaque, omnis quod!",
-    "image": "/cvhai/01.png",
-    "images": [
-      "/cvhai/01.png"
-    ]
-  }
+        "name": "TailwindCSS"
+			},
+			{
+				"name": "PostgreSQL"
+			}
+		],
+    "experience": "One of the most challenging projects I’ve worked on, this website served as our capstone thesis. Developing this project strengthened my full-stack development skills and experience working with REST APIs, while enhancing my communication abilities as The system was designed to authorize and authenticate users via JWT and to integrate with other closely related systems."
+	},
+	{
+		"id": "10a4cd39-ed3c-452d-a463-f8af7811b59a",
+		"projectName": "TherYgros",
+		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore. Blanditiis adipisci, est sequi doloribus quia distinctio? Asperiores cum exercitationem nisi quis, quam nihil perferendis, incidunt architecto eaque, omnis quod!",
+		"image": "/cvhai/01.png",
+		"images": [
+			"/cvhai/01.png"
+		]
+	}
 ]

@@ -102,28 +102,29 @@ function ProjectDescription() {
                             </h1>
 
                             <div id="project-description-grid">
-                                <div className="flex flex-col space-y-2">
-                                    <div className="space-y-1">
-                                        <h4 id="project-description-header">
-                                            What the project all about:
+                                <div className="flex flex-col space-y-10">
+                                    <div className="space-y-3">
+                                        <h4 className="text-xl font-semibold text-white tracking-wide border-b border-gray-700 pb-2">
+                                            What the project is all about
                                         </h4>
-                                        <p id="project-description-text">
+                                        <p className="text-gray-300 leading-relaxed">
                                             {project.description}
                                         </p>
                                     </div>
 
-                                    <div className="space-y-1">
-                                        <h4 id="project-description-header">
-                                            My experience:
+                                    <div className="space-y-3">
+                                        <h4 className="text-xl font-semibold text-white tracking-wide border-b border-gray-700 pb-2">
+                                            My experience
                                         </h4>
-                                        <p id="project-description-text">
+                                        <p className="text-gray-300 leading-relaxed">
                                             {project.experience}
                                         </p>
                                     </div>
                                 </div>
-                                <div>
+
+                                <div className="flex justify-center lg:justify-end">
                                     <TechStackCard
-                                        cardName={"Technology Used"}
+                                        cardName="Technology Used"
                                         techStack={project.techUsed}
                                         techUsed={true}
                                     />
