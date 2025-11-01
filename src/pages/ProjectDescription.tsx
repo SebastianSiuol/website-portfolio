@@ -18,7 +18,6 @@ import {
 } from "@/components/shadcn/carousel";
 
 import "./ProjectDescription.css";
-import CarouselPictureView from "@/components/CarouselPictureView";
 import { ImageZoom } from "@/components/shadcn/image-zoom";
 import { cn } from "@/lib/utils";
 
