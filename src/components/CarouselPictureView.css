@@ -3,8 +3,12 @@
 
   max-width: 80vw;
 
+  max-height:90vh;
+
   justify-content: center;
   align-content: center;
+
+  overflow: hidden;
 }
 /*
 .carousel-dialog-header {

@@ -16,7 +16,7 @@ type CarouselPictureView = {
 function CarouselPictureView({children, imgSrc}: CarouselPictureView) {
     return (
         <Dialog>
-            <DialogTrigger>{children}</DialogTrigger>
+            <DialogTrigger asChild>{children}</DialogTrigger>
             <DialogContent className="carousel-dialog-content" showCloseButton={false}>
                 <DialogHeader className="carousel-dialog-header">
                     <DialogDescription className="carousel-media-container">

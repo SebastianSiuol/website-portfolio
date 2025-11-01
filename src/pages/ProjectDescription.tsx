@@ -19,6 +19,8 @@ import {
 
 import "./ProjectDescription.css";
 import CarouselPictureView from "@/components/CarouselPictureView";
+import { ImageZoom } from "@/components/shadcn/image-zoom";
+import { cn } from "@/lib/utils";
 
 function ProjectDescription() {
     const [project, setProject] = useState<Project | null>();
@@ -90,15 +92,17 @@ function ProjectDescription() {
                                         <CarouselItem key={index}>
                                             <div className="p-1">
                                                 <Card className="carousel-card">
-                                                    <CarouselPictureView
-                                                        imgSrc={img}
-                                                    >
-                                                        <CardContent className="p-0">
-                                                            <img
-                                                                src={`${img}`}
-                                                            />
-                                                        </CardContent>
-                                                    </CarouselPictureView>
+                                                    {/* <CarouselPictureView imgSrc={img}> */}
+                                                    <CardContent className="p-0">
+                                                        <ImageZoom
+                                                            backdropClassName={cn(
+                                                                '[&_[data-rmiz-modal-overlay="visible"]]:bg-black/80'
+                                                            )}
+                                                        >
+                                                            <img src={img} />
+                                                        </ImageZoom>
+                                                    </CardContent>
+                                                    {/* </CarouselPictureView> */}
                                                 </Card>
                                             </div>
                                         </CarouselItem>
