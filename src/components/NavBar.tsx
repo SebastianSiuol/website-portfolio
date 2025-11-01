@@ -65,11 +65,11 @@ function Navbar() {
                             Projects
                         </a>
                     </li>
-                    {/* <li>
+                    <li>
                         <a href="#contact" onClick={menuBurger}>
                             Contact
                         </a>
-                    </li> */}
+                    </li>
                 </ul>
             </nav>
         </>
