@@ -20,22 +20,22 @@ function Contact() {
                                 <p>Whether you have a project in mind, want to collaborate, or just want to say hello, don't hesitate to reach out. I typically respond within 24 hours. </p>
                             </div>
                             <div>
-                                <div className="social-card">
+                                <a href="mailto:slm.torio30@gmail.com" className="social-card">
                                     <SiGmail />
                                     <p>slm.torio30@gmail.com</p>
-                                </div>
-                                 <div className="social-card">
+                                </a>
+                                 <a href="https://www.linkedin.com/in/sebastian-louis-torio" className="social-card">
                                     <FaLinkedin />
                                     <p>Sebastian Louis Torio</p>
-                                </div>
-                                <div className="social-card">
+                                </a>
+                                <a href="https://www.facebook.com/sebastianoriot30/" className="social-card">
                                     <FaFacebook />
                                     <p>Sebastian Louis Torio</p>
-                                </div>
-                                 <div className="social-card">
+                                </a>
+                                 <a href="" className="social-card">
                                     <FaLocationDot />
                                     <p>Fairview, Quezon City</p>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -18,7 +18,7 @@ function RevealOnScroll ({ children }: RevealOnScrollProps){
           }
         });
       },
-      { threshold: 0.2, rootMargin: '0px 0px -50% 0px' }
+      { threshold: 0.1, rootMargin: '0px 0px -50% 0px' }
     );
 
     if (ref.current) observer.observe(ref.current);
