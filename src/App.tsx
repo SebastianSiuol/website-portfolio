@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import type { Container, Engine } from "@tsparticles/engine";
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine, type IParticlesProps } from "@tsparticles/react";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
@@ -15,7 +14,7 @@ import Footer from "./components/Footer";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
-// import Contact from "./sections/Contact";
+import Contact from "./sections/Contact";
 
 
 import "./App.css";
@@ -38,15 +37,10 @@ function App() {
         });
     }, []);
 
-    const particlesLoaded = (container) => {
-        console.log(container);
-    };
-
     return (
         <>
         { init && <Particles
             id="tsparticles"
-            particlesLoaded={particlesLoaded}
             options={{
                 background: {
                     color: {
@@ -58,14 +52,14 @@ function App() {
                     events: {
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: "attract",
                         },
                     },
                     modes: {
                         push: {
                             quantity: 1,
                         },
-                        repulse: {
+                        attract: {
                             distance: 100,
                             duration: 0.4,
                         },
@@ -113,7 +107,7 @@ function App() {
             <Home />
             <About />
             <Projects />
-            {/* <Contact /> */}
+            <Contact />
             <Footer />
         </>
     );

@@ -1,0 +1,68 @@
+.contact-info-grid {
+  flex-direction: column;
+}
+
+#contact-text {
+  text-align: start;
+
+
+  border-right: none;
+  border-bottom: #666 5px dotted;
+
+  margin: 2rem 0;
+  padding: 0 0 2rem 0;
+}
+
+.social-card {
+  display: flex;
+  gap: 1rem;
+
+  place-items: center;
+
+  align-content: center;
+
+  border: #333 1px solid;
+  border-radius: 1rem;
+
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+
+  transition: all 200ms ease;
+
+  backdrop-filter: blur(4px);
+
+  cursor: pointer;
+}
+
+.social-card:hover {
+  border: #333 2px solid;
+
+  transform: scale(1.02);
+}
+
+.social-card:active {
+  transform: scale(0.99);
+}
+
+@media (min-width: 768px) {
+  .contact-info-grid {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 1rem;
+  }
+
+  #contact-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+
+  margin: 1rem 0;
+
+  border-right: #666 5px dotted;
+  border-bottom: none;
+
+}
+}

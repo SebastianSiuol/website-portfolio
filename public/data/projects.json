@@ -125,6 +125,6 @@
         "name": "ESP-32"
       }
     ],
-    "experience": "A simple side project I worked on for my Emerging Technologies course. I integrated an ESP-32 chip and made it communicate with the app via UDP to allow network provisioning and send WiFi credentials to the ESP-32."
+    "experience": "A simple side project I worked on for my Emerging Technologies course. I programmed an ESP-32 chip and made it communicate with the app via UDP to allow network provisioning and send WiFi credentials to the ESP-32."
 	}
 ]

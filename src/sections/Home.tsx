@@ -10,9 +10,6 @@ function Home() {
 
     useEffect(() => {
         const current = texts[index % texts.length];
-
-        console.log(index);
-
         const timeout = setTimeout(() => {
             if (!isDeleting) {
                 setText(current.substring(0, text.length + 1));
