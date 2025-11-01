@@ -5,6 +5,7 @@
 #contact-text {
   text-align: start;
 
+  width: 80vw;
 
   border-right: none;
   border-bottom: #666 5px dotted;
@@ -60,6 +61,8 @@
   text-align: start;
 
   margin: 1rem 0;
+
+  width: 40vw;
 
   border-right: #666 5px dotted;
   border-bottom: none;
