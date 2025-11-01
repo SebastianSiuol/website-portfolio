@@ -1,8 +1,7 @@
 .carousel-dialog-content {
   background-color: #111;
 
-  max-width: 90vw;
-  min-height: 90vh;
+  max-width: 80vw;
 
   justify-content: center;
   align-content: center;
@@ -17,8 +16,6 @@
 } */
 
 .carousel-media-container img{
-  height: 80vh;
-  width: 80vw;
 
 
   border: #111 4px solid;

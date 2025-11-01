@@ -28,7 +28,7 @@ function ProjectCard({
                         alt={projectName}
                     />
                 </CardContent>
-                <CardHeader className="flex flex-col text-[#e8e8e8]">
+                <CardHeader className="project-card-header flex flex-col text-[#e8e8e8]">
                     <h4 className="project-title font-semibold">
                         {projectName}
                     </h4>
@@ -36,10 +36,10 @@ function ProjectCard({
                         {description}
                     </p>
                 </CardHeader>
-                <CardFooter className="px-4 pb-4 justify-end">
+                <CardFooter className="project-card-footer px-4 pb-4 justify-end">
                     <Link
                         to={`/project/${id}`}
-                        className="view-project border border-[#333] rounded-lg text-[#e8e8e8] text-sm px-3 py-2 hover:bg-[#222] transition-all duration-200"
+                        className="view-project"
                     >
                         {`View Project >`}
                     </Link>
