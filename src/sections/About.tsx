@@ -52,7 +52,8 @@ function About() {
                     <div className="card">
                         <p>
                             I am a full-stack developer with an experience in developing web applications and innovative solutions.
-                            <br />
+                        </p>
+                        <p>
                             Have proficient and fundamental knowledge on the technologies below:
                         </p>
                     </div>
