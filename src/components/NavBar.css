@@ -27,6 +27,8 @@
   font-size: 1.5rem;
   font-weight: bolder;
   text-decoration: none;
+
+  place-items: center;
 }
 
 .logo-icon {
